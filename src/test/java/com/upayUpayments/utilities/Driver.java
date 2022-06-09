@@ -12,6 +12,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+        
+
 public class Driver {
     private Driver() {
         //singilton pattern
@@ -29,6 +31,7 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(DesiredCapabilities.setChromeOptions());
+
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
